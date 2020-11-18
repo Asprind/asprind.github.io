@@ -1301,7 +1301,7 @@ header li {
   padding: 200px 295px 60px;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 768px) {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
   .petsScreen {
     height: auto;
   }
@@ -1329,7 +1329,7 @@ header li {
   padding: 0 0 45px;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 768px) {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
   .petsSlider {
     padding: 0 54px;
     -ms-flex-pack: distribute;
@@ -1374,7 +1374,7 @@ header li {
   padding: 30px 0;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 768px) {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
   .petsCell:nth-child(3) {
     display: block;
   }
@@ -1477,7 +1477,7 @@ header li {
   transition: 0.35s;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 768px) {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
   .pagination {
     padding: 40px 0 76px;
   }
@@ -1510,7 +1510,7 @@ footer {
   padding: 0 40px;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 768px) {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
   footer {
     height: 639px;
     background-size: cover;
@@ -1560,7 +1560,7 @@ footer {
 }
 
 .footerContacts {
-  padding: 0 160px 59px 0;
+  padding: 0 120px 59px 0;
   width: 300px;
 }
 
@@ -1613,7 +1613,7 @@ footer {
   transition: 0.5s;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 768px) {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
   .footerContacts {
     padding: 30px 61px 0 0;
   }

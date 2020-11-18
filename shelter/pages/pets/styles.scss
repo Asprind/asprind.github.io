@@ -120,7 +120,7 @@ nav {
         padding: 200px 295px 60px;
     }
 
-	@media screen and (max-width: 1279px) and (min-width: 768px) {
+	@media screen and (max-width: 1199px) and (min-width: 768px) {
 		height: auto;
 
 		h3 {
@@ -143,7 +143,7 @@ nav {
 	flex-wrap: wrap;
 	padding: 0 0 45px;
 
-	@media screen and (max-width: 1279px) and (min-width: 768px) {
+	@media screen and (max-width: 1199px) and (min-width: 768px) {
 		padding: 0 54px;
 		justify-content: space-around;
 	}
@@ -169,7 +169,7 @@ nav {
 
     p {padding: 30px 0;}
 
-	@media screen and (max-width: 1279px) and (min-width: 768px) {
+	@media screen and (max-width: 1199px) and (min-width: 768px) {
 		&:nth-child(3) {display: block;}
 		&:nth-child(7) {display: none;}
 		&:nth-child(8) {display: none;}
@@ -242,7 +242,7 @@ nav {
         }
     }
 
-	@media screen and (max-width: 1279px) and (min-width: 768px) {
+	@media screen and (max-width: 1199px) and (min-width: 768px) {
 		padding: 40px 0 76px;
 	}
 
@@ -264,7 +264,7 @@ footer {
     align-items: flex-end;
     padding: 0 40px;
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
         height: 639px;
         background-size: cover;
         align-items: center;
@@ -295,7 +295,7 @@ footer {
 }
 
 .footerContacts {
-    padding: 0 160px 59px 0;
+    padding: 0 120px 59px 0;
     width: 300px;
 
     h3 {
@@ -343,7 +343,7 @@ footer {
         }
     }
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
         padding: 30px 61px 0 0;
     }
 
