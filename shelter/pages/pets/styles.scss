@@ -35,7 +35,7 @@ header {
 	line-height: 35.2px;
 	letter-spacing: 0.06em;
 	margin: 0;
-	padding: 0;
+    padding: 0;
 }
 
 .subLogo {
@@ -116,7 +116,7 @@ nav {
     height: 1462px;
 
     h3 {
-        @include title_h3
+        @include title_h3;
         padding: 200px 295px 60px;
     }
 
@@ -247,7 +247,7 @@ nav {
 	}
 
 	@media screen and (max-width: 768px) {
-		padding: 0;
+		padding: 0 0 40px;
 		width: 300px;
 	}
 }

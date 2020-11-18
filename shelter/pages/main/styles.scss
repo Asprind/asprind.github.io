@@ -41,6 +41,21 @@ $colorDark3XL: #292929;
     text-decoration: none;
 }
 
+@mixin petsSliderNav {
+    color: $colorDark3XL;
+    box-sizing: border-box;
+    border: 2px solid $mainColor;
+    border-radius: 50%;
+    text-decoration: none;
+    padding: 15px 16px;
+
+    &:hover {
+        background-color: $mainColorLight;
+        border: 2px solid $mainColorLight;
+        transition: 0.35s;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -49,13 +64,13 @@ $colorDark3XL: #292929;
 body {
     margin: 0 auto;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1200px;
 }
 
 header {
     position: absolute;
     display: flex;
-    padding: 60px 0 0 40px;
+    padding: 60px 60px 0 40px;
     max-width: 1200px;
     width: 100%;
     justify-content: space-between;
@@ -105,7 +120,10 @@ header {
         cursor: default;
     }
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
+        padding: 30px 30px 0 30px;
+    }
+    @media screen and (max-width: 767px) {
         padding: 30px 30px 0 30px;
     }
 }
@@ -114,7 +132,7 @@ nav {
     display: flex;
     align-items: center;
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
     }
 
     @media screen and (max-width: 767px) {
@@ -144,6 +162,8 @@ nav {
         z-index: 1;
         transition-duration: 0.5s;
     }
+
+
 }
 
 .menuItem {
@@ -242,6 +262,12 @@ nav {
     }
 }
 
+.logoShelter {
+    &:hover {
+        cursor: default;
+    }
+}
+
 .startScreen {
     display: flex;
     background: url("../../assets/images/start-screen-background.jpg"),
@@ -256,7 +282,7 @@ nav {
         font-size: 44px;
         font-weight: 400;
         font-style: normal;
-        padding: 0 192px 0 0;
+        padding: 0 152px 0 0;
         margin: 0;
         line-height: 130%;
     }
@@ -288,10 +314,11 @@ nav {
         &:hover {
             background-color: $mainColorLight;
             transition: 0.35s;
+            box-shadow:0 0 6px $mainColor;
         }
     }
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
         flex-direction: column;
         height: 1165px;
         background-size: cover;
@@ -324,8 +351,8 @@ nav {
 
         h2 {
             padding: 60px 0 0;
-            font-size: 25px;
-            line-height: 32.5px;
+            font-size: 30px;
+            line-height: 35.5px;
         }
 
         img {
@@ -344,7 +371,7 @@ nav {
 .startTextBlock {
     padding: 0 0 258px 0;
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
         padding: 150px 0 115px;
         box-sizing: border-box;
         max-width: 460px;
@@ -362,7 +389,7 @@ nav {
     padding: 0 215px;
 
     img {
-        padding: 80px 120px 100px 0;
+        padding: 80px 80px 100px 0;
     }
 
     h3 {
@@ -381,7 +408,7 @@ nav {
         padding: 25px 0 0;
     }
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
         flex-direction: column-reverse;
         height: 1048px;
         padding: 0 25px;
@@ -419,7 +446,7 @@ nav {
 .aboutTextBlock {
     padding: 94px 0 114px;
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
         width: 430px;
         padding: 80px 0;
     }
@@ -430,16 +457,16 @@ nav {
 }
 
 .petsScreen {
-    height: 877px;
+    min-height: 830px;
     background: $colorLightL;
     padding: 0 40px;
     text-align: center;
 
     h3 {
         @include title_h3;
-        padding: 80px 400px 60px;
+        padding: 80px 360px 60px;
 
-        @media screen and (max-width: 1279px) and (min-width: 768px) {
+        @media screen and (max-width: 1199px) and (min-width: 768px) {
             padding: 80px 0 60px;
         }
 
@@ -451,29 +478,16 @@ nav {
 
     @media screen and (max-width: 767px) {
         height: auto;
-        padding: 0 30px 57px;
+        //padding: 0 30px 57px;
     }
 }
 
 .petsSlider {
     display: flex;
-    padding: 0 0 75px 0;
+    padding: 0;
     align-items: center;
 
-    a {
-        color: $colorDark3XL;
-        box-sizing: border-box;
-        border: 2px solid $mainColor;
-        border-radius: 50%;
-        text-decoration: none;
-        padding: 15px 16px;
-
-        &:hover {
-            background-color: $mainColorLight;
-            border: 2px solid $mainColorLight;
-            transition: 0.35s;
-        }
-    }
+    a {@include petsSliderNav;}
 }
 
 .petsSliderInner {
@@ -482,7 +496,7 @@ nav {
     padding: 0 53px;
     width: 990px;
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
         justify-content: space-evenly;
         padding: 0 10px;
     }
@@ -491,6 +505,33 @@ nav {
         justify-content: center;
         padding: 0 12px;
     }
+}
+
+.petsSliderNav {
+    @include petsSliderNav;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.petsSliderNavMobile {
+    display: block;
+    text-align: center;
+    margin: 45px 0 0;
+
+    a {@include petsSliderNav;}
+
+    span {padding: 0 60px;}
+
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+
 }
 
 .petsCell {
@@ -536,7 +577,7 @@ nav {
         padding: 15px 45px;
     }
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
         &:nth-child(3) {
             display: none;
         }
@@ -553,6 +594,7 @@ nav {
 }
 
 .getToKnow {
+    display: inline-block;
     box-sizing: border-box;
     background-color: $mainColor;
     border-radius: 100px;
@@ -565,7 +607,7 @@ nav {
     letter-spacing: 0.06em;
     text-decoration: none;
     padding: 15px 45px;
-    // margin: 0 469.2px;
+    margin: 45px 0 0;
 
     &:hover {
         background-color: $mainColorLight;
@@ -583,7 +625,7 @@ nav {
         padding: 80px 0 60px;
     }
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
         height: auto;
     }
 
@@ -629,7 +671,7 @@ nav {
         padding: 30px 0 0;
     }
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
         a {
             padding: 0 30px 56px;
             width: 166px;
@@ -652,7 +694,7 @@ nav {
     display: flex;
     height: 464px;
     background: $colorLightL;
-    padding: 0 183px 0 182px;
+    padding: 0 143px 0 142px;
 
     img {
         padding: 92px 30px 111px 0;
@@ -695,7 +737,7 @@ nav {
         line-height: 18px;
     }
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
         height: 783px;
         flex-direction: column-reverse;
         align-items: center;
@@ -769,20 +811,19 @@ nav {
     }
 }
 
-.card {
-    padding: 0 !important;
-}
+.card {padding: 0 !important;}
 
 footer {
     background: url("../../assets/images/footer-background.jpg"),
-        radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), linear-gradient(0deg, #211f20, #211f20);
+        radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+        linear-gradient(0deg, #211f20, #211f20);
     height: 354px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 0 40px;
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
         height: 639px;
         background-size: cover;
         align-items: center;
@@ -813,7 +854,7 @@ footer {
 }
 
 .footerContacts {
-    padding: 0 160px 59px 0;
+    padding: 0 120px 59px 0;
     width: 300px;
 
     h3 {
@@ -860,7 +901,7 @@ footer {
         }
     }
 
-    @media screen and (max-width: 1279px) and (min-width: 768px) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
         padding: 30px 61px 0 0;
     }
 
