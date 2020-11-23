@@ -786,4 +786,8 @@ footer a:hover {
     padding: 0 20px;
   }
 }
+
+.owl-nav {
+  display: none;
+}
 /*# sourceMappingURL=styles.css.map */
