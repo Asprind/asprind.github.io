@@ -84,6 +84,10 @@ nav {
         width: 510px;
         padding: 7px 0 0;
         margin: 0;
+
+        @media screen and (max-width: 1303px) {
+            padding: 7px 60px 0 0;
+        }
     }
 
     a {
@@ -100,7 +104,7 @@ nav {
         }
     }
 
-    @media screen and (max-width: 1150px) {
+    @media screen and (max-width: 920px) {
         display: inline;
     }
 }
@@ -161,7 +165,7 @@ nav {
         }
     }
 
-    @media screen and (min-width: 1150px) {
+    @media screen and (min-width: 920px) {
         display: none;
     }
 }
@@ -171,7 +175,7 @@ nav {
     flex-direction: row;
     list-style-type: none;
 
-    @media screen and (max-width: 1150px) {
+    @media screen and (max-width: 920px) {
         flex-direction: column;
         align-items: center;
         position: fixed;
@@ -189,7 +193,7 @@ nav {
 
 .menuItem {
 
-    @media screen and (max-width: 1150px) {
+    @media screen and (max-width: 920px) {
         display: inline-block;
         padding: 12px 40px;
         color: $colorDarkXL;
@@ -206,7 +210,7 @@ nav {
 .headerBanner {
     padding: 25px 318px 0 311px;
 
-    @media screen and (max-width: 1550px) and (min-width: 320px) {
+    @media screen and (max-width: 1550px) {
         padding: 25px 0 30px;
     }
 }
@@ -222,7 +226,7 @@ nav {
     div {
         padding: 125px 0 0 5px;
 
-        @media screen and (max-width: 1550px) and (min-width: 320px) {
+        @media screen and (max-width: 1550px) {
             padding: 55px 0 35px 5px;
             text-align: center;
         }
@@ -302,7 +306,7 @@ nav {
         }
     }
 
-    @media screen and (max-width: 1550px) and (min-width: 320px) {
+    @media screen and (max-width: 1550px) {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -330,7 +334,7 @@ nav {
         margin: 0;
         padding: 26px 0 0;
 
-        @media screen and (max-width: 1149px) and (min-width: 320px) {
+        @media screen and (max-width: 1149px) {
             font-size: 14px;
             margin: 0 auto;
         }
@@ -349,7 +353,7 @@ nav {
         text-align: center;
         margin: 0 auto;
 
-        @media screen and (max-width: 1149px) and (min-width: 320px) {
+        @media screen and (max-width: 720px) {
             width: 50%;
         }
     }
@@ -363,7 +367,7 @@ nav {
         }
     }
 
-    @media screen and (max-width: 1149px) and (min-width: 320px) {
+    @media screen and (max-width: 1149px) {
         justify-content: center;
     }
 }
@@ -381,7 +385,7 @@ nav {
     img {
         padding: 59px 63px 43px;
 
-        @media screen and (max-width: 1149px) and (min-width: 320px) {
+        @media screen and (max-width: 1149px) {
             display: none;
         }
     }
@@ -501,6 +505,14 @@ nav {
         margin: 0;
         padding: 108px 0 0;
         user-select: none;
+
+        @media screen and (max-width: 1149px) and (min-width: 720px) {
+            padding: 0;
+        }
+
+        @media screen and (max-width: 719px) {
+            padding: 65px 0 0;
+        }
     }
 }
 

@@ -58,6 +58,12 @@ nav ul {
   margin: 0;
 }
 
+@media screen and (max-width: 1303px) {
+  nav ul {
+    padding: 7px 60px 0 0;
+  }
+}
+
 nav a {
   text-decoration: none;
   font-family: "Sunflower", sans-serif;
@@ -72,7 +78,7 @@ nav a:hover {
   color: #46B4D4;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 920px) {
   nav {
     display: inline;
   }
@@ -158,7 +164,7 @@ nav a:hover {
           transition-duration: 0.25s;
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 920px) {
   .menuBtn {
     display: none;
   }
@@ -175,7 +181,7 @@ nav a:hover {
   list-style-type: none;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 920px) {
   .menuBox {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -199,7 +205,7 @@ nav a:hover {
   }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 920px) {
   .menuItem {
     display: inline-block;
     padding: 12px 40px;
@@ -218,7 +224,7 @@ nav a:hover {
   padding: 25px 318px 0 311px;
 }
 
-@media screen and (max-width: 1550px) and (min-width: 320px) {
+@media screen and (max-width: 1550px) {
   .headerBanner {
     padding: 25px 0 30px;
   }
@@ -241,7 +247,7 @@ nav a:hover {
   padding: 125px 0 0 5px;
 }
 
-@media screen and (max-width: 1550px) and (min-width: 320px) {
+@media screen and (max-width: 1550px) {
   .headerBannerInfo div {
     padding: 55px 0 35px 5px;
     text-align: center;
@@ -336,7 +342,7 @@ nav a:hover {
   }
 }
 
-@media screen and (max-width: 1550px) and (min-width: 320px) {
+@media screen and (max-width: 1550px) {
   .headerBannerInfo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -389,7 +395,7 @@ nav a:hover {
   padding: 26px 0 0;
 }
 
-@media screen and (max-width: 1149px) and (min-width: 320px) {
+@media screen and (max-width: 1149px) {
   .features p {
     font-size: 14px;
     margin: 0 auto;
@@ -415,7 +421,7 @@ nav a:hover {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1149px) and (min-width: 320px) {
+@media screen and (max-width: 720px) {
   .featuresInfo div {
     width: 50%;
   }
@@ -433,7 +439,7 @@ nav a:hover {
   }
 }
 
-@media screen and (max-width: 1149px) and (min-width: 320px) {
+@media screen and (max-width: 1149px) {
   .featuresInfo {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -459,7 +465,7 @@ nav a:hover {
   padding: 59px 63px 43px;
 }
 
-@media screen and (max-width: 1149px) and (min-width: 320px) {
+@media screen and (max-width: 1149px) {
   .bestValue img {
     display: none;
   }
@@ -607,6 +613,18 @@ nav a:hover {
 @media screen and (max-width: 469px) {
   .ourPartners h2 {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1149px) and (min-width: 720px) {
+  .ourPartners h2 {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .ourPartners h2 {
+    padding: 65px 0 0;
   }
 }
 
